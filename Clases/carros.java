@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 class carros {
     private String tipo;
     private String placa;
@@ -19,10 +21,12 @@ class carros {
         this.tarea = tarea;
     }
 
+
+    
     public void imprimirInformacion() {
-        System.out.println("Tipo: " + tipo);
-        System.out.println("Placa: " + placa);
-        System.out.println("Cantidad de asientos: " + cantidadAsientos);
-        System.out.println("Tarea asignada: " + tarea);
+      
+        JOptionPane.showMessageDialog(null, "Informacion de vehiculo:\n" +  "Tipo:" +tipo+ "\nPlaca:" + placa +"\nAsientos"+cantidadAsientos + "\nTarea:" + tarea );
+
     }
+
 }
