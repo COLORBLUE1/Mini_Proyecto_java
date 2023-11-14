@@ -53,12 +53,15 @@ public class ProgramaVehiculos {
                     JOptionPane.showMessageDialog(null, "No se encontró ningún vehículo con esa placa.");
                 }
             } else if (opcion.equals("4")) {
-                   JOptionPane.showMessageDialog(null, "No se encontró ningún vehículo con esa placa.");
-                break;
+                RastrearVehiculo rastrear = new RastrearVehiculo(vehiculos);
+                rastrear.rastrearVehiculo();
+
                 
+                break;
+
             } else if (opcion.equals("5")) {
-                      JOptionPane.showMessageDialog(null, "En la buena.");
- 
+                JOptionPane.showMessageDialog(null, "En la buena.");
+
                 break;
             } else {
                 JOptionPane.showMessageDialog(null, "Opción inválida. Por favor, ingrese una opción válida.");
