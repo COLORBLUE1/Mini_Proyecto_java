@@ -16,9 +16,7 @@ public class RastrearVehiculo {
     int estadoramdon = random.nextInt(estado.length);
 
     String ciudadSeleccionada = ciudadesCali[indiceAleatorio];
-String estadoramdonselecionada = ciudadesCali[estadoramdon];
-
-
+    String estadoramdonselecionada = estado[estadoramdon];
 
     public RastrearVehiculo(ArrayList<carros> vehiculos) {
 
@@ -38,7 +36,7 @@ String estadoramdonselecionada = ciudadesCali[estadoramdon];
                     "\nRuta: " + ciudadSeleccionada +
                     "\nEstado: " + estadoramdonselecionada);
         } else {
-            JOptionPane.showMessageDialog(null, "No se encontró ningún vehículo con la placa" + placa);
+            JOptionPane.showMessageDialog(null, "No se encontró ningún vehículo con la placa " + placa);
         }
     }
 

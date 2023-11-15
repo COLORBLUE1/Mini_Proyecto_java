@@ -8,7 +8,6 @@ public class carros {
     public int cantidadAsientos;
     public String tarea;
     public String conductor;
-    public int id;
     public double latitud;
     public double longitud;
 
@@ -18,9 +17,8 @@ public class carros {
         this.cantidadAsientos = cantidadAsientos;
         this.tarea = "";
         this.conductor = "";
-        this.id = (int) (Math.random() * 100);
-        this.longitud = (id * Math.random());
-        this.latitud = (id * Math.random());
+        this.longitud = (Math.random()* 10000);
+        this.latitud = (Math.random()* 20000);
     }
 
     public String getPlaca() {
@@ -36,18 +34,16 @@ public class carros {
     }
 
     public void imprimirInformacion() {
+        if(conductor==""){
+ JOptionPane.showMessageDialog(null, "Informacion de vehiculo: \n" + "Tipo: " + tipo + "\nPlaca: " + placa
+                + "\nCapacidad: " + cantidadAsientos  + "\nDisponibilidad: Disponible" +"\nConductor asignado: " + conductor+ "\nTarea asignada: " + tarea);
 
-        JOptionPane.showMessageDialog(null, "Informacion de vehiculo: \n" + "Tipo: " + tipo + "\nPlaca: " + placa
-                + "\nAsientos: " + cantidadAsientos  +"\nConductor asignado: " + conductor+ "\nTarea asignada: " + tarea);
+        }else{
+             JOptionPane.showMessageDialog(null, "Informacion de vehiculo: \n" + "Tipo: " + tipo + "\nPlaca: " + placa
+                + "\nCapacidad: " + cantidadAsientos  +"\nConductor asignado: "  + conductor + "\nDisponibilidad: Ocupado" + "\nTarea asignada: " + tarea);
 
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        }
+       
     }
 
     public double getLatitud() {
@@ -69,7 +65,7 @@ public class carros {
     @Override
     public String toString() {
         return "carros [tipo=" + tipo + ", placa=" + placa + ", cantidadAsientos=" + cantidadAsientos + ", tarea="
-                + tarea + ", conductor=" + conductor + ", id=" + id + ", latitud=" + latitud + ", longitud=" + longitud
+                + tarea + ", conductor=" + conductor +  ", latitud=" + latitud + ", longitud=" + longitud
                 + "]";
     }
 

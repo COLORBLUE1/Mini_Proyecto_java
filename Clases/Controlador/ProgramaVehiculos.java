@@ -41,16 +41,17 @@ public class ProgramaVehiculos {
                     JOptionPane.showMessageDialog(null, "No se encontró ningún vehículo con esa placa.");
                 }
             } else if (opcion.equals("3")) {
-          
+
                 String placa = JOptionPane
                         .showInputDialog("Ingrese la placa del vehículo al que desea asignar una tarea:");
-
-                String conductor = JOptionPane.showInputDialog("Ingrese la conductor a asignar:");
-                String tarea = JOptionPane.showInputDialog("Ingrese la tarea a asignar:");
 
                 boolean encontrado = false;
                 for (carros vehiculo : vehiculos) {
                     if (vehiculo.getPlaca().equals(placa)) {
+
+                        String conductor = JOptionPane.showInputDialog("Ingrese la conductor a asignar:");
+                        String tarea = JOptionPane.showInputDialog("Ingrese la tarea a asignar:");
+
                         vehiculo.asignaronductor(conductor);
                         vehiculo.asignarTarea(tarea);
                         encontrado = true;
