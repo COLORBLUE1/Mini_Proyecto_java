@@ -27,7 +27,6 @@ public class ProgramaVehiculos {
                 JOptionPane.showMessageDialog(null, "Vehículo agregado exitosamente.");
             } else if (opcion.equals("2")) {
                 String placa = JOptionPane.showInputDialog("Ingrese la placa del vehículo a buscar:");
-
                 boolean encontrado = false;
                 for (carros vehiculo : vehiculos) {
                     if (vehiculo.getPlaca().equals(placa)) {
@@ -73,7 +72,6 @@ public class ProgramaVehiculos {
             } else {
                 JOptionPane.showMessageDialog(null, "Opción inválida. Por favor, ingrese una opción válida.");
             }
-
         }
     }
 }
