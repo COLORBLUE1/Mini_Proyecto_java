@@ -1,11 +1,15 @@
+package Controlador;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-public class ProgramaVehiculos {
-    public static void main(String[] args) {
-        ArrayList<carros> vehiculos = new ArrayList<>();
+import Modelo.RastrearVehiculo;
+import Modelo.carros;
 
+public class ProgramaVehiculos{
+
+    public void menu() {
+        ArrayList<carros> vehiculos = new ArrayList<>();
         while (true) {
             String opcion = JOptionPane.showInputDialog(
                     "Menú:\n1. Agregar vehículo\n2. Imprimir información de vehículos\n3. Asignar tarea a vehículo\n4. Rastreas\n5. Salir");
@@ -55,12 +59,10 @@ public class ProgramaVehiculos {
             } else if (opcion.equals("4")) {
                 RastrearVehiculo rastrear = new RastrearVehiculo(vehiculos);
                 rastrear.rastrearVehiculo();
-
-                
+                menu();
                 break;
-
             } else if (opcion.equals("5")) {
-                JOptionPane.showMessageDialog(null, "En la buena.");
+                JOptionPane.showMessageDialog(null, "Hasta luego.");
 
                 break;
             } else {

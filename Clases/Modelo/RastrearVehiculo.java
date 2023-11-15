@@ -1,3 +1,4 @@
+package Modelo;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
@@ -15,12 +16,12 @@ public class RastrearVehiculo {
         carros vehiculo = buscarVehiculoPorPlaca(placa);
 
         if (vehiculo != null) {
-            System.out.println("El vehículo con placa " + vehiculo.getPlaca()
-                    + " se encuentra actualmente en las siguientes coordenadas:");
-            System.out.println("Latitud: " + vehiculo.getLatitud());
-            System.out.println("Longitud: " + vehiculo.getLongitud());
+            JOptionPane.showMessageDialog(null, "El vehículo con placa " + vehiculo.getPlaca()
+                    + " se encuentra actualmente en las siguientes coordenadas:\n"+ 
+                            "\nLatitud: " + vehiculo.getLatitud()+
+                            "\nLongitud: " + vehiculo.getLongitud());
         } else {
-            System.out.println("No se encontró ningún vehículo con la placa " + placa);
+            JOptionPane.showMessageDialog(null, "No se encontró ningún vehículo con la placa" + placa);
         }
     }
 

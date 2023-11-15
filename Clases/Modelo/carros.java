@@ -1,20 +1,23 @@
+package Modelo;
 import javax.swing.JOptionPane;
 
-class carros {
-    private String tipo;
-    private String placa;
-    private int cantidadAsientos;
-    private String tarea;
-    private int id;
-    private double latitud;
-    private double longitud;
+public class carros {
+    public String tipo;
+    public String placa;
+    public int cantidadAsientos;
+    public String tarea;
+    public int id;
+    public double latitud;
+    public double longitud;
 
     public carros(String tipo, String placa, int cantidadAsientos) {
         this.tipo = tipo;
         this.placa = placa;
         this.cantidadAsientos = cantidadAsientos;
         this.tarea = "";
-        this.id = (int) (Math.random() * 1000000);
+        this.id = (int) (Math.random() * 1000);
+        this.longitud = (id * Math.random());
+        this.latitud = (id * Math.random());
     }
 
     public String getPlaca() {
@@ -31,7 +34,6 @@ class carros {
                 + "\nAsientos" + cantidadAsientos + "\nTarea:" + tarea);
 
     }
-
     public int getId() {
         return id;
     }
