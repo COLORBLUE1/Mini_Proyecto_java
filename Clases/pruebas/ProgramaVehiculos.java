@@ -190,7 +190,6 @@ public class ProgramaVehiculos {
             if (vehiculo.getPlaca().equals(placa3)) {
                 String conductor = JOptionPane.showInputDialog("Ingrese la conductor a asignar:");
                 String tarea = JOptionPane.showInputDialog("Ingrese la tarea a asignar:");
-
                 vehiculo.asignaronductor(conductor);
                 vehiculo.asignarTarea(tarea);
                 encontrado = true;
