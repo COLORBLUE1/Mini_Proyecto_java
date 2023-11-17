@@ -1,8 +1,6 @@
-package Vista;
+package pruebas;
 
 import javax.swing.SwingUtilities;
-
-import pruebas.ComandoInterfaz;
 
 public class MainInterfaz {
 
