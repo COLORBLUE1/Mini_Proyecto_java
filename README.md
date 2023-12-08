@@ -1,16 +1,16 @@
 # Mini_Proyecto_java
 
-#Introducion
+# Introducion
 
 Proyecto desarrollado en el lenguaje de programacion java, referente a las asignaciones de y creaciones de vehiculos de tranporte 
 
-#Ejercucion
+# Ejercucion
 
 --> Ejecutar programa
 
 (Clases/Vista/Main.java) "sin interfaz" o (Clases/Vista/MainInterfaz.java) "Con interfaz sencilla"
 
-#Imagenes (preview)
+#  Imagenes (preview)
 
 NO INTERFAZ
 
