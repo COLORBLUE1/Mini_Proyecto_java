@@ -1,7 +1,5 @@
 # Mini_Proyecto_java
 
-# Introducion
-
 Proyecto desarrollado en el lenguaje de programacion java, referente a las asignaciones de y creaciones de vehiculos de tranporte 
 
 # Ejercucion
