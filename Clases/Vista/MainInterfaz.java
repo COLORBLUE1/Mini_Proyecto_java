@@ -1,8 +1,10 @@
-package pruebas;
+package Vista;
 
 /* BY ABEL SOL */
 
 import javax.swing.SwingUtilities;
+
+import pruebas.ComandoInterfaz;
 
 public class MainInterfaz {
 
@@ -10,5 +12,4 @@ public class MainInterfaz {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new ComandoInterfaz());
             }
-    
 }
