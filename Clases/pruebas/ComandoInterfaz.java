@@ -1,6 +1,6 @@
 package pruebas;
 
-
+/* BY ABEL SOL */
 
 public class ComandoInterfaz implements Runnable {
 

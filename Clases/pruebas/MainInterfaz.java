@@ -1,5 +1,7 @@
 package pruebas;
 
+/* BY ABEL SOL */
+
 import javax.swing.SwingUtilities;
 
 public class MainInterfaz {
